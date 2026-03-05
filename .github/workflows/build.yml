@@ -23,6 +23,5 @@ jobs:
     - name: Build project
       run: cmake --build build
 
-    - name: Run executable
-      run: ./build/HAMS
-     
+    - name: Run executable (auto-exit)
+      run: echo "5" | ./build/HAMS
